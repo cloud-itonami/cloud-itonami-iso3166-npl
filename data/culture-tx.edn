@@ -1,0 +1,15 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "npl.dish.momo", :name "Momo", :country "NPL", :kind :dish, :summary "Steamed, filled dumpling in Nepalese and Tibetan cuisine, also popular in Bangladesh, Bhutan and India.", :url "https://en.wikipedia.org/wiki/Momo_(food)", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "npl.dish.dal-bhat", :name "Dal Bhat", :country "NPL", :kind :dish, :summary "Lentil-and-rice dish that became Nepal's widely eaten daily meal, especially in the Terai plains and Kathmandu Valley.", :url "https://en.wikipedia.org/wiki/Dal_bhat", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:url "https://en.wikipedia.org/wiki/Sel_roti", :id "npl.dish.sel-roti", :kind :dish, :name-local "सेल रोटी", :country "NPL", :retrieved-at "2026-07-17", :summary "Traditional Nepalese ring-shaped sweet fried dough made from rice flour.", :name "Sel Roti", :url-provenance :wikipedia-en}
+#:culture{:id "npl.dish.gundruk", :name "Gundruk", :country "NPL", :kind :dish, :summary "Dish of fermented leafy green vegetables (saag) originating in Nepal.", :url "https://en.wikipedia.org/wiki/Gundruk", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "npl.beverage.tongba", :name "Tongba", :country "NPL", :kind :beverage, :summary "Millet-based alcoholic beverage found in the eastern mountainous region of Nepal and neighbouring Sikkim and Darjeeling.", :url "https://en.wikipedia.org/wiki/Tongba", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:url "https://en.wikipedia.org/wiki/Dhaka_topi", :id "npl.craft.dhaka-topi", :kind :craft, :name-local "ढाका टोपी", :country "NPL", :retrieved-at "2026-07-17", :summary "Traditional Nepalese hand-woven cloth hat, part of Nepalese national dress, woven from Dhaka fabric centered in regions like Palpa and Tansen.", :name "Dhaka Topi", :url-provenance :wikipedia-en}
+#:culture{:id "npl.festival.dashain", :name "Dashain", :country "NPL", :kind :festival, :summary "Hindu religious festival, also known as Vijaya Dashami, observed primarily in Nepal and in Sikkim, West Bengal, Assam and South India.", :url "https://en.wikipedia.org/wiki/Dashain", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "npl.heritage.kathmandu-durbar-square", :name "Kathmandu Durbar Square", :country "NPL", :kind :heritage, :summary "One of three Durbar (royal palace) Squares in the Kathmandu Valley, Nepal, inscribed as a UNESCO World Heritage Site.", :url "https://en.wikipedia.org/wiki/Kathmandu_Durbar_Square", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
