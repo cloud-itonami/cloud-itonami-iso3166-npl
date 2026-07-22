@@ -72,6 +72,59 @@ See [`docs/business-model.md`](docs/business-model.md) and
 
 AGPL-3.0-or-later.
 
+## Market-entry / statute catalogs
+
+Governed public-sector market-entry compliance actor, same architecture
+as `cloud-itonami-iso3166-ind`/`-pak`/`-lao`, investigated for Nepal's
+own market-entry surface (verified 2026-07-23, see the namespace
+docstrings for the full research trail, including facts this iteration
+could NOT verify -- the Income Tax Act's own primary citation, and a
+distinct Nepal-specific "authorized representative" provision):
+
+- `src/marketentry/{facts,governor,phase,sim,operation,registry,store,
+  marketentryllm}.cljc` -- the actor. `facts.cljc` cites the Public
+  Procurement Act, 2063 (Act No. 36; Public Procurement Monitoring
+  Office, `ppmo.gov.np`, own page fetched directly), the Bolpatra e-GP
+  portal (`bolpatra.gov.np/egp/`, confirmed via a Wayback Machine
+  snapshot since the live site did not respond to this session's fetch
+  tooling), the Companies Act, 2063 (Act No. 18; Office of the Company
+  Registrar / CAMIS, confirmed via Wayback Machine since `ocr.gov.np`
+  also did not respond directly), the Inland Revenue Department's PAN
+  regime (`ird.gov.np`, fetched directly), and the Foreign Investment
+  and Technology Transfer Act, 2075 (FITTA, Act No. 34; Department of
+  Industry, `doind.gov.np`, fetched directly). `governor.cljc`'s
+  flagship check independently recomputes whether an engagement's own
+  declared foreign-investment amount actually falls under Department-
+  of-Industry or Investment-Board-Nepal approval jurisdiction per
+  FITTA's own दफा १७ (Section 17) NPR 6,000,000,000 threshold -- a
+  single clean monetary-value-threshold routing between two EXECUTIVE
+  bodies, grep-verified absent fleet-wide, a genuinely different shape
+  from every other iso3166 sibling. This iteration also found (and
+  disclosed rather than silently resolved) that FITTA's own text names
+  a now-REPEALED "Investment Board Act, 2068" as the Board's governing
+  statute -- Investment Board Nepal's own current "Laws" listing names
+  only the Public-Private Partnership and Investment Act, 2075, whose
+  own दफा ७१ (fetched and read directly) confirms the 2068 Act's repeal
+  while preserving the Board's institutional continuity.
+- `src/statute/facts.cljc` -- general-law catalog: the Public
+  Procurement Act, 2063; the Companies Act, 2063; FITTA, 2075; the
+  Public-Private Partnership and Investment Act, 2075 (Investment Board
+  Nepal's actual current governing statute); and the Labour Act, 2074
+  (Act No. 14; Ministry of Labour, Employment and Social Security,
+  `moless.gov.np`, fetched directly). This catalog deliberately carries
+  NO Income Tax Act entry -- an honestly-reported gap this iteration
+  could not independently confirm by law-number/date this session (see
+  namespace docstring), not a fabricated citation.
+
+Every citation is curl/pdftotext/WebFetch-verified against an official
+source (`ppmo.gov.np`, `doind.gov.np`, `ibn.gov.np`, `moless.gov.np`,
+`ird.gov.np`, plus Wayback Machine snapshots for `ocr.gov.np` and
+`bolpatra.gov.np`, both of which did not respond directly to this
+session's fetch tooling -- disclosed explicitly rather than silently
+substituted). Two legacy-font-encoded government PDFs (the Public
+Procurement Act and FITTA) required manual glyph decoding, also
+disclosed in the namespace docstrings rather than silently resolved.
+
 ## Culture catalog
 
 Alongside the market-entry / statute catalogs, this repo carries a
