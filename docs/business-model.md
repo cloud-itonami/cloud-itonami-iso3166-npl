@@ -28,9 +28,15 @@
   established under the Public Procurement Act 2007), mandatory for all
   federal, provincial and local public entities
 - business/tax registration checklist: a company registration
-  certificate from the Office of the Company Registrar (OCR, ocr.gov.np)
-  and a PAN (Permanent Account Number) certificate from the Inland
-  Revenue Department
+  certificate from the Office of the Company Registrar (OCR, ocr.gov.np,
+  via the CAMIS online system, Companies Act 2063) and a PAN (Permanent
+  Account Number) certificate from the Inland Revenue Department
+- foreign-investment approval routing: Department of Industry (DOI) for
+  foreign investment up to NPR 6,000,000,000, or Investment Board Nepal
+  (IBN) above that threshold, per the Foreign Investment and Technology
+  Transfer Act, 2075 (FITTA) दफा १७ -- independently verified by the
+  Market-Entry Compliance Governor's flagship check (see
+  `src/marketentry/governor.cljc`)
 - local-content / preferential-procurement navigation: Nepali
   public-procurement preference provisions on qualifying tenders
 - ongoing regulatory-change monitoring subscription
@@ -51,6 +57,10 @@
 - a false or fabricated regulatory-requirement claim is a HARD hold that
   cannot be overridden by human approval alone — it must be corrected
   against a cited official source first
+- a filing that claims the wrong foreign-investment approval authority
+  (Department of Industry vs. Investment Board Nepal) for its own
+  declared investment amount is a HARD hold, independently recomputed
+  against FITTA 2075's own NPR 6,000,000,000 threshold
 - this service does **not** provide legal or tax advice; characterization
   and filing on the client's behalf beyond checklist/draft assistance
   routes to Nepali-licensed counsel or a registered agent
