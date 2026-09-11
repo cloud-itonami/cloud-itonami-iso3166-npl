@@ -36,7 +36,7 @@
   (IBN) above that threshold, per the Foreign Investment and Technology
   Transfer Act, 2075 (FITTA) दफा १७ -- independently verified by the
   Market-Entry Compliance Governor's flagship check (see
-  `src/marketentry/governor.cljc`)
+  `src/marketentry/governor.cljk`)
 - local-content / preferential-procurement navigation: Nepali
   public-procurement preference provisions on qualifying tenders
 - ongoing regulatory-change monitoring subscription

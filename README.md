@@ -106,7 +106,7 @@ distinct Nepal-specific "authorized representative" provision):
   only the Public-Private Partnership and Investment Act, 2075, whose
   own दफा ७१ (fetched and read directly) confirms the 2068 Act's repeal
   while preserving the Board's institutional continuity.
-- `src/statute/facts.cljc` -- general-law catalog: the Public
+- `src/statute/facts.cljk` -- general-law catalog: the Public
   Procurement Act, 2063; the Companies Act, 2063; FITTA, 2075; the
   Public-Private Partnership and Investment Act, 2075 (Investment Board
   Nepal's actual current governing statute); and the Labour Act, 2074
@@ -133,7 +133,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Nepal:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
